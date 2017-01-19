@@ -1,21 +1,30 @@
 html {
-  background-color: #000;
+  background-color: blue;
 }
 
 .clock-face {
   height: 300px;
   margin: 50px auto;
   width: 300px;
+  position: relative;
 
   background: transparent url("../images/clock-face.svg") no-repeat center center;
 }
 
 .center {
   width: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hand {
   width: 14px;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
 }
 
 .hand-hour {
