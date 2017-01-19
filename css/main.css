@@ -1,5 +1,5 @@
 html {
-  background-color: blue;
+  background-color: #000;
 }
 
 .clock-face {
@@ -28,9 +28,22 @@ html {
 }
 
 .hand-hour {
-
+  animation: clock 6s linear 12;
+  transform-origin: center bottom;
 }
 
 .hand-minute {
+  animation: clock .5s linear;
+  transform-origin: center bottom;
+}
 
+@keyframes clock {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
