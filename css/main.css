@@ -28,12 +28,12 @@ html {
 }
 
 .hand-hour {
-  animation: clock 6s linear 12;
+  animation: clock 6s linear infinite;
   transform-origin: center bottom;
 }
 
 .hand-minute {
-  animation: clock .5s linear;
+  animation: clock .5s linear infinite;
   transform-origin: center bottom;
 }
 
